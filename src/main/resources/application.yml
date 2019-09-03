@@ -9,6 +9,8 @@ spring:
     show-sql: true
     generate-ddl: true
 
+  main:
+    allow-bean-definition-overriding: true
 
   datasource:
     primary:

@@ -41,7 +41,7 @@ public class SecondaryConfig {
                 .dataSource(secondaryDataSource)
                 .properties(getVendorProperties())
                 .packages("com.averyxu.model")        //设置实体类所在包的位置
-                .persistenceUnit("primaryPersistenceUnit")
+                .persistenceUnit("secondaryPersistenceUnit")
                 .build();
     }
 
