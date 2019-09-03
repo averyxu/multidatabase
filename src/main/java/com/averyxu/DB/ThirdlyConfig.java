@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @EnableJpaRepositories(
         entityManagerFactoryRef = "entityManagerFactoryPrimary",
         transactionManagerRef = "transactionManagerPrimary",
-        basePackages = {"com.averyxu.dao"})    // 指定该数据源操作的DAO接口包
+        basePackages = {"com.averyxu.repository"})    // 指定该数据源操作的DAO接口包
 public class ThirdlyConfig {
 
     @Autowired
