@@ -1,1 +1,30 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    open-in-view: true
+    show-sql: true
+    generate-ddl: true
 
+
+  datasource:
+    primary:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/test01?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driverClassName: com.mysql.cj.jdbc.Driver
+
+    secondary:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/test02?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driverClassName: com.mysql.cj.jdbc.Driver
+
+    thirdly:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/test03?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+      driverClassName: com.mysql.cj.jdbc.Driver
